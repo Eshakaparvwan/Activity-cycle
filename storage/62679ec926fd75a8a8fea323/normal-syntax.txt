@@ -1,0 +1,6 @@
+Ng Module - 
+1. it is a class
+2. marked by @NgModule decorator 
+3. helps us to organise the complex relationship between views (components and directives ), data Providers such as services.
+
+ng g guard name_of_guard

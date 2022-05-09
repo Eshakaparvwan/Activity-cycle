@@ -1,0 +1,128 @@
+section is block level element.
+
+header is structural tag and also a block level element.
+
+inline are side by side elements.
+
+block level elements ocuupy space of proper one block.
+
+------------------------------------------Display-------------------------------------------------------------
+
+Display : inline - block - we can make changes in the height and width by putting all elements in one line.
+
+Display : block - it will make elements' display block (full space)
+
+Display : Inline - it will make elements rendering into one block
+
+------------------------------------------Position----------------------------------------------------------------
+
+position - the position property specifies the type of positioning method used for an element.
+ 
+There are five different position values:
+
+static
+relative
+fixed
+absolute
+sticky
+------
+Static -- by default - they are not affected by the top , bottom , left and right properties.
+
+div.static {
+  position: static;
+  border: 3px solid #73AD21;
+}
+
+-----
+Relative - it is positioned relative to its normal position. Setting the top, right, bottom, and left properties 
+of a relatively-positioned element will cause it to be adjusted away from its normal position. 
+Other content will not be adjusted to fit into any gap left by the element.
+
+div.relative {
+  position: relative;
+  left: 30px;
+  border: 3px solid #73AD21;
+}
+
+
+----  
+fixed - positioned relative to the viewport , which means it always stays in the same place even if the page is scrolled. The top, right, bottom, and left properties are used to position the element. 
+
+div.fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 300px;
+  border: 3px solid #73AD21;
+}
+
+
+-----
+Absolute - it is positioned relative to the nearest positioned ancestor
+
+div.relative {
+  position: relative;
+  width: 400px;
+  height: 200px;
+  border: 3px solid #73AD21;
+}
+
+div.absolute {
+  position: absolute;
+  top: 80px;
+  right: 0;
+  width: 200px;
+  height: 100px;
+  border: 3px solid #73AD21;
+}
+
+
+
+-------------------------- Z- index property -------------------------------------
+
+When elements are positioned, they can overlap other elements.
+
+The z-index property specifies the stack order of an element (which element should be placed in front of, or behind, the others).
+
+An element can have a positive or negative stack order.
+
+Note: z-index only works on positioned elements (position: absolute, position: relative, position: fixed, or position: sticky) and flex items (elements that are direct children of display: flex elements).
+
+
+
+---------------------------------------CSSoverflow----------------------------
+CSS Overflow
+The overflow property specifies whether to clip the content or to add scrollbars when the content of an element is too big to fit in the specified area.
+
+The overflow property has the following values:
+
+visible - Default. The overflow is not clipped. The content renders outside the element's box
+hidden - The overflow is clipped, and the rest of the content will be invisible
+scroll - The overflow is clipped, and a scrollbar is added to see the rest of the content
+auto - Similar to scroll, but it adds scrollbars only when necessary.
+
+
+
+------------------------------------------Display----------------------------
+
+The display property specifies the display behavior (the type of rendering box) of an element.
+
+-----
+Inline:- Just as the name suggests, inline displays an element in the same line as the rest. Specifying any height and width properties will be of no use, as it follows the height and width of the line, of which it is a part.
+
+
+-----
+Block: Displays an element as a block element. It starts on a new line and takes up take up as much horizontal space as they can. Block-level elements do not appear in the same line, but breaks the existing line and appear in the next line.
+
+
+------
+
+Flex: Flex displays an element as a flexible structure. To use flex display, a flex level container has to be created. Flex level container is nothing, but an element with the display property set to flex. The flex container itself is displayed in a new line, just like the block element. The flex container can contain other elements in it and thus, the flex container is the parent element and the elements that are part of it are the child elements. Display flex property helps us to align and distribute space among items in a container, even when their size is unknown and/or dynamic.
+
+
+-----
+Inline-Block: Displays an element as an inline-level block container. An element set to inline-block is very similar to inline in that it will be set in line with the natural flow of text, i.e; unlike display: block, display:inline-block does not add a line-break after the element. So, the element can sit next to other elements. The element itself is formatted as an inline element, but it allows you to set a width and height on the element, which is not possible in the display: inline.
+
+
+------
+Inline-flex: Displays an element as an inline-level flex container. The display:inline-flex does not make flex items display inline. It makes the flex container display inline. The main difference between display: flex and display: inline-flex is that display: inline-flex will make the flex container an inline element while it’s content maintains its flexbox properties.

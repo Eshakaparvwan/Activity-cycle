@@ -1,0 +1,8 @@
+ng new appname - to create new project
+
+ng add @angular/material - to add material
+
+ng g m nameOfModule - to create new module
+
+ng generate service servicename - to generate new service
+

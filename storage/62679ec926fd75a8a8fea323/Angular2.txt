@@ -1,0 +1,70 @@
+https://angular.io/guide/inputs-outputs
+
+
+
+
+for angular we need 
+-- node
+-- npm
+-- Angular  CLI
+-- text editor
+
+
+
+npm install -g @angular/cli
+ng new appname
+cd appname
+ng serve - to run application
+
+Node Modules - it is a folder which contain all packages ,when we intall something with npm it came into node_modules.
+
+Modules - angular apps are modular in nature. Angular modules are just lines of code that can be imported or exported
+
+
+Root-module -- Appmodule 
+
+each module comprised of components and services 
+
+rootcomponent will be app-component and all other components will be nested inside this component.
+
+Angular App >>>> one or more module >>>> module >>>> one or more components >>>> component comprise of HTML+Class and Services
+
+modules import or export the code and render the view as and when required.
+
+package.json file -- will contain dependies and libraries required for angular application to work. These packages get installed when we run the command when ng new appname. and all packages got installed in ng-modules folder.
+
+
+in script file (package.json) --
+"start" - "ng-serve" , so npm start will automatically run "ng-serve".
+
+
+Src --> 
+	main.ts --> entry point
+
+
+src >>>> app >>>> app.module.ts -- root module of our application.
+	     >>>> app.component.ts -- root component of our application.
+
+
+
+flow will be - ng serve(cmd) --> main.ts --> app.module.ts --> app.components.ts-->and then it will get rendered on app.component.html
+
+
+
+
+
+
+----------------------------------------------------------------------------------
+App Module - 
+
+Module - it is a collection of components
+
+@NgModule - it is a module 
+
+Declarations - declarations is done for components
+
+import - modules are always imported 
+
+
+----------------------------------------------------------------------------------
+Services -  A service is typically a class with a narrow, well-defined purpose.

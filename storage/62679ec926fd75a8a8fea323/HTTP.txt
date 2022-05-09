@@ -1,0 +1,227 @@
+methods-
+get - read 
+post - create
+patch - update the record
+put - update 
+delete - delete 
+option- pre flight check
+
+
+html file create DOM 
+
+in js we actually create  http  request
+
+js has two parts 
+1- js specifications
+2- runtime api -- provided by browser - settimeout , console etc
+
+browser also provides fetch
+syntax of fetch-
+	fetch(url,options)
+
+both gonna create runtime envt.
+
+
+
+
+
+Project 1 - notes
+
+token for user authentication 
+
+frontend - 
+index file , css files , js files(http reques,DOM,Update Dom)
+
+----------backend------------
+npm start
+after server started 
+postman - new collection
+- post - local host url -body section 
+test - validate
+wrong data  - name , email , pswd
+	bad request , 400 status code 
+
+
+save 
+again post - login page check kro , data save hua k nahi , we will get data
+and it will have token 
+
+
+3rd part - backend data daala 
+and postman pe 
+
+unauthorised - bcz it needs token , 
+token is not stored anywhere , we store token in frontend 
+toekn will be decrypted using secret key , so jitni baar server open hoga it will get login
+
+server can store expiry date
+
+full stack project - view documentation - publish 
+ url for publication 
+
+cors - 
+
+
+-----------Frontend------------
+
+methods-
+get - read 
+post - create
+patch - update the record
+put - update 
+delete - delete 
+option- pre fight check
+
+
+401 - unauthorised 
+
+without authorization api will not return anything , only unauthorised mssg will be displayed
+
+3 sections in main
+
+html - height 100%
+
+body - margin 0 , height 100, display flex
+
+main - fles , flex=1 
+
+section - flex 1 . box sizing , display flex  , flex direction - column , align items - center
+
+form
+
+div - for user input  - input with class input - 
+
+form - display flex 
+space around
+
+
+we r going to grab elements in dom.js file -
+ getelementby id 
+nameinput , email , password 
+
+registerbtn event listener
+prevent default to prevent submit by itself
+ 
+
+
+-------- main.js-----
+ - function user bnayenge
+defer is used , 
+function for extracting data values
+
+convert to json string using stringify
+
+send data to server
+call function in js - registerapi
+
+
+----http js--------
+
+asyc, await , fetch url ,method post body
+
+when it is done ,alert in main 
+
+
+
+
+-----ntwrk------
+CORS error - 
+
+nothing in response , preview 
+
+port num is different - server will not allow 5500 request on port nummber 9182 (anything) - request rejected
+
+
+pre flight request - browser send dummy option before actual request - bkend (cors install etc.)
+
+
+
+
+second - 
+dom - take inputs of email pswrd like beofore
+
+
+
+local Storage.setItem('token',token)
+islogged in = true after login
+
+function to get data from local storage 
+application - local storage - token hoga
+
+main- login ke andr - getnews
+
+http - get news function ,fetch news , method - get , authorization - token 
+
+response : data  , error
+
+response is sgetting convert , and destructure , 
+in data we r gonna get token only 
+
+login response will retuen data and err
+
+
+registeruser 
+
+
+
+
+--------- Styling-----------
+html height - 100% - it will take entire width
+
+so give html and body entire height as - 100%
+
+
+when web page is loaded , the browser creates a Documenr Object Model.
+
+DOM defines HTML elements as objects , the properties of all HTML elements, The methods to access all HTML elements,
+the events for all HTML elements.
+
+
+In other words HTML DOM is a standard for how to get , change , add or delete HTML elements.
+
+The HTML DOM can be accessed with JS
+
+
+innerHTML - it is useful for getting or replacing the content of HTML elements.
+
+
+const element = document.getElementById("intro");
+
+if the element is found , the method will return the element as an object , and if element is not found , element will contain nul.
+
+
+------------ DOM ------------
+DOM is a part of HTML
+-- GET - to get the values
+-- SET - to set the values
+
+
+
+-------JSON-----------
+
+JSON stands for JavaScript Object Notation.
+it is a text format for storing and transporting data
+
+JSON is used to exchange Data to/from a web server. When sending data to a server, the data has to be a string.
+ans we convert javascript object into a string with JSON.stringify().
+
+
+-------- Fetch -----------
+
+fetch function works asynchronously - it takes time to retrieve some data
+
+
+-------------Content - Type Header -----------
+
+1. it is the part of http protocol.
+
+2. it tells the recieving machine what type of data to expect and how to interpret it
+
+
+
+
+
+
+
+
+
